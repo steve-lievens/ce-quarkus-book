@@ -1,9 +1,9 @@
 ## Stage 1 : build with maven builder image with native capabilities
-FROM registry.access.redhat.com/ubi8/openjdk-17:latest
-COPY --chown=quarkus:quarkus mvnw /code/mvnw
-COPY --chown=quarkus:quarkus .mvn /code/.mvn
-COPY --chown=quarkus:quarkus pom.xml /code/
-USER quarkus
+FROM registry.access.redhat.com/ubi8/openjdk-17:latest  AS build
+COPY --chown=185 mvnw /code/mvnw
+COPY --chown=185 .mvn /code/.mvn
+COPY --chown=185 pom.xml /code/
+USER 185
 WORKDIR /code
 RUN ./mvnw -B org.apache.maven.plugins:maven-dependency-plugin:3.1.2:go-offline
 COPY src /code/src
