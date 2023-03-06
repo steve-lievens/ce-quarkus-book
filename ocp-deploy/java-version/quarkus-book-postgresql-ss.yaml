@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: postgres
+  labels:
+    app.kubernetes.io/name: postgresql
 spec:
   serviceName: postgres
   replicas: 1
-  labels:
-    app.kubernetes.io/name: postgresql
   selector:
     matchLabels:
       app: postgres
