@@ -5,6 +5,8 @@ metadata:
 spec:
   serviceName: postgres
   replicas: 1
+  labels:
+    app.kubernetes.io/name: postgresql
   selector:
     matchLabels:
       app: postgres

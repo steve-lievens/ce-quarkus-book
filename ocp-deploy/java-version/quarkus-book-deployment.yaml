@@ -9,7 +9,7 @@ metadata:
     app: quarkus-book
     app.kubernetes.io/component: quarkus-book
     app.kubernetes.io/instance: quarkus-book
-    app.kubernetes.io/name: quarkus-book
+    app.kubernetes.io/name: quarkus
     app.kubernetes.io/part-of: quarkus-app
 spec:
   replicas: 1
