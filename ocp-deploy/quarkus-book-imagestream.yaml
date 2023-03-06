@@ -4,7 +4,7 @@ metadata:
   annotations:
     app.openshift.io/vcs-ref: ""
     app.openshift.io/vcs-uri: "https://github.com/steve-lievens/ce-quarkus-book"
-  name: quarkus-book
+  name: is-quarkus-book
   labels:
     app: quarkus-book
     app.kubernetes.io/component: quarkus-book
