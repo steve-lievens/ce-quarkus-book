@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/component: quarkus-book
     app.kubernetes.io/instance: quarkus-book
     app.kubernetes.io/name: quarkus-book
-    app.kubernetes.io/part-of: quarkus-java
+    app.kubernetes.io/part-of: quarkus-app
 spec:
   lookupPolicy:
     local: true
